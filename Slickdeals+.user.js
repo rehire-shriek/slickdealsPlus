@@ -293,11 +293,39 @@
         `;
 
         styleEl.textContent = `
+            /* --- Menu Styles --- */
             #sdPlusNavMenu { position: relative; }
-            .sd-plus-menu-button { cursor: pointer; color: #333; font-weight: bold; padding: 6px 10px; background-color: #fff; border: 1px solid #ccc; border-radius: 4px; }
+            .sd-plus-menu-button {
+                cursor: pointer; color: #333; font-weight: bold;
+                padding: 6px 10px; background-color: #fff;
+                border: 1px solid #ccc; border-radius: 4px;
+            }
             .sd-plus-menu-dropdown { display: none; }
-            #sdPlusNavMenu.menu-open .sd-plus-menu-dropdown { display: block; position: absolute; top: 100%; left: 0; width: 320px; background-color: #ffffff; border: 1px solid #ccc; border-radius: 5px; z-index: 10000; font-family: Arial, sans-serif; font-size: 14px; color: #333; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-            #sdPlusMenuBody { padding: 15px; } .sd-plus-section { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px; } #sdPlusMenuBody h4 { margin: 0 0 10px 0; } #sdPlusMenuBody label { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; } .sd-plus-input-number { width: 50px; text-align: right; } #sdPlusResetButton { width: 100%; margin-top: 10px; background-color: #f44336; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; } #sdPlusResetButton:hover { background-color: #d32f2f; }
+            #sdPlusNavMenu.menu-open .sd-plus-menu-dropdown {
+                display: block; position: absolute; top: 100%; left: 0;
+                width: 320px; background-color: #ffffff; border: 1px solid #ccc;
+                border-radius: 5px; z-index: 10000; font-family: Arial, sans-serif;
+                font-size: 14px; color: #333; text-align: left;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            #sdPlusMenuBody { padding: 15px; }
+            .sd-plus-section {
+                margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px;
+            }
+            #sdPlusMenuBody h4 { margin: 0 0 10px 0; }
+            #sdPlusMenuBody label {
+                display: flex; justify-content: space-between;
+                align-items: center; margin-bottom: 8px;
+            }
+            .sd-plus-input-number { width: 50px; text-align: right; }
+            #sdPlusResetButton {
+                width: 100%; margin-top: 10px; background-color: #f44336;
+                color: white; border: none; padding: 10px 15px;
+                border-radius: 5px; cursor: pointer;
+            }
+            #sdPlusResetButton:hover { background-color: #d32f2f; }
+
+            /* --- Highlighting & Filtering --- */
             .dealCard.${CLASS_NAMES.HIDE} { display: none !important; }
             .dealCard.${CLASS_NAMES.HIGHLIGHT_RATING} { background-color: ${settings.colorRatingBG} !important; }
             .dealCard.${CLASS_NAMES.HIGHLIGHT_DIFF} { background-color: ${settings.colorDiffBG} !important; }
